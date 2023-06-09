@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+*{
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.contact-us{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* SECTION */
+.contact-container {
+    padding: 1.5rem 0;
+}
+
+.contact-title{
+    font-size: 1.5rem;
+    text-align: center;
+}
