@@ -10,7 +10,7 @@ document.querySelector('#buy-now-btn').addEventListener('click', function(event)
         Swal.fire({
           icon: 'success',
           title: 'Success!',
-          text: 'Your order has been placed, you will receive a receipt over the email',
+          text: 'Your order has been placed, you will receive a receipt over email',
           confirmButtonText: 'OK'
         });
       }, 2000);
