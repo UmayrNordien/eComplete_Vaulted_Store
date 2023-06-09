@@ -30,3 +30,24 @@
     font-size: 1.5rem;
     text-align: center;
 }
+
+/* LINKS * /
+/* unvisited link */
+a:link {
+    color: var(--text-color);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--text-color);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--main-color) !important;
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--side-color) !important;
+  }

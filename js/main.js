@@ -39,14 +39,14 @@ function ready() {
     var button = addCart[i];
     button.addEventListener("click", addCartClicked);
   }
-  // Buy Button Work
+  // Checkout Button Work
   document
-    .getElementsByClassName("btn-buy")[0]
-    .addEventListener("click", buyButtonClicked);
+    .getElementsByClassName("btn-checkout")[0]
+    .addEventListener("click", checkoutButtonClicked);
 }
-// Buy Button
-function buyButtonClicked() {
-  alert("Your Order is placed");
+// Checkout Button
+function checkoutButtonClicked() {
+  window.location.href = "./checkout.html"; /* redirect to checout to complete shipping form */
   var cartContent = document.getElementsByClassName("cart-content")[0];
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);

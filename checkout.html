@@ -9,11 +9,14 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, eCommerce, Netlify, Cart">
     <meta name="author" content="Umayr Nordien">
     <link rel="icon" href="https://i.postimg.cc/g2XtgPH0/vault-meta-icon.png" alt="disk">
-    <title>Vltd | Shop</title>
+    <title>Vaulted</title>
     <!-- Link To CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <!--SWEETALERT CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css" />
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -24,10 +27,10 @@
         <!-- Nav -->
         <div class="nav container">
             <a href="home.html" class="logo">Vaulted</a>
-            <a href="home.html" class="logo">Home</a>
+            <a href="shop.html" class="logo">Shop</a>
             <!-- <a href="contact.html"><i class="bx bx-send"></i></a>       -->
             <!-- Cart-Icon -->
-            <i class='bx bxs-shopping-bags' id="cart-icon"></i>
+            <i class='bx bxs-shopping-bag-alt' id="cart-icon"></i>
             <!-- Cart -->
             <div class="cart">
                 <h2 class="cart-title">Your Cart</h2>
@@ -44,58 +47,62 @@
                 <button type="button" class="btn-checkout">Checkout</button>
                 <!-- Cart Close -->
                 <i class='bx bx-x' id="close-cart"></i>
-
             </div>
         </div>
     </header>
-    <!-- Shop -->
-    <section class="shop container">
-        <h2 class="section-title">Shop Products</h2>
-        <!-- Content -->
-        <div class="shop-content">
-            <!-- Card 1 -->
-            <div class="product-box">
-                <img src="img/product1.png" alt="Emma Clark Skull Jersey" class="product-img" loading="lazy">
-                <h2 class="product-title">Emma Clark Skull Jersey</h2>
-                <span class="price">$2000</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
+
+    <section>
+      <div class="container">
+        <h2>Shipping</h2>
+        <p class="details">Please enter your shipping details.</p>
+        <hr class="hr1" />
+        <form id="shipping-form">
+          <div class="form">
+            <div class="fields fields--2">
+              <label class="field">
+                <span class="field__label" for="firstname">First name</span>
+                <input class="field__input" type="text" id="firstname" name="firstname" required />
+              </label>
+              <label class="field">
+                <span class="field__label" for="lastname">Last name</span>
+                <input class="field__input" type="text" id="lastname" name="lastname" required />
+              </label>
             </div>
-            <!-- Card 2 -->
-            <div class="product-box">
-                <img src="img/product2.png" alt="Neon Genesis Jacket" class="product-img" loading="lazy">
-                <h2 class="product-title">NEON GENESIS JACKET</h2>
-                <span class="price">$4200</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
+            <label class="field">
+              <span class="field__label" for="email">Email</span>
+              <input class="field__input" type="email" id="email" name="email" required />
+            </label>
+            <label class="field">
+              <span class="field__label" for="address">Address</span>
+              <input class="field__input" type="text" id="address" name="address" required />
+            </label>
+            <label class="field">
+              <span class="field__label" for="country">Country</span>
+              <select class="field__input" id="country" name="country" required>
+                <option value=""></option>
+                <option value="South Africa">South Africa</option>
+              </select>
+            </label>
+            <div class="fields fields--3">
+              <label class="field">
+                <span class="field__label" for="zipcode">Zip code</span>
+                <input class="field__input" type="text" id="zipcode" name="zipcode" required />
+              </label>
+              <label class="field">
+                <span class="field__label" for="city">City</span>
+                <select class="field__input" id="city" name="city" required>
+                  <option value=""></option>
+                  <option value="Cape Town">Cape Town</option>
+                  <option value="Johannesburg">Johannesburg</option>
+                  <option value="Port Elizabeth">Port Elizabeth</option>
+                </select>
+              </label>
             </div>
-            <!-- Card 3 -->
-            <div class="product-box">
-                <img src="img/product3.png" alt="Guts Jersey" class="product-img" loading="lazy">
-                <h2 class="product-title">GUTS JERSEY</h2>
-                <span class="price">$2400</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 4 -->
-            <div class="product-box">
-                <img src="img/product4.png" alt="Steep Clif Graphic Hoodie" class="product-img" loading="lazy">
-                <h2 class="product-title">STEEP CLIF GRAPHIC HOODIE</h2>
-                <span class="price">$2000</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 5 -->
-            <div class="product-box">
-                <img src="img/product5.png" alt="TALISHKO Stitching Zebra Sherpa Winter Coat" class="product-img" loading="lazy">
-                <h2 class="product-title">Zebra Sherpa Coat</h2>
-                <span class="price">$3000</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 6 -->
-            <div class="product-box">
-                <img src="img/product6.png" alt="Vintage Work Jacket" class="product-img" loading="lazy">
-                <h2 class="product-title">Vintage Work Jacket</h2>
-                <span class="price">$4800</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-        </div>
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-outline-dark" id="buy-now-btn">Buy Now</button>
+        </form>
+      </div>
     </section>
 
   <!-- Footer -->
@@ -161,12 +168,14 @@
     <!-- Copyright -->
   </footer>
 
-    <!-- Link TO JS -->
-    <script src="js/main.js"></script>
-    <script src="js/test.js"></script>
 
-    <!-- BOOTSTRAP JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  <!-- Link TO JS -->
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  <!-- SWEETALERT JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

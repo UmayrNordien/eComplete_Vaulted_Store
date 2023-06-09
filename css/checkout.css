@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+:root {
+  --color-border: #252525;
+  --color-lighter-gray: #d6d6d6;
+  --color-light-gray: #a9a9a9;
+}
+
+* {
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  padding: 0;
+
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fields--2 {
+      display: flex;
+      justify-content: space-between;
+  }
+  .fields--3 {
+      display: flex;
+      justify-content: space-between;
+  }
+  .field {
+      flex-basis: calc(33.33% - 10px);
+  }
+}
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field__input {
+  display: block;
+  width: 100%;
+  padding: 2px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select.field__input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.01 8l5.49 7.5L17.99 8H6.01z"/></svg>') no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 30px;
+}
+
+/* LINKS */
+/* unvisited link */
+a:link {
+  color: var(--text-color);
+}
+
+/* visited link */
+a:visited {
+  color: var(--text-color);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--main-color) !important;
+}
+
+/* selected link */
+a:active {
+  color: var(--side-color) !important;
+}
