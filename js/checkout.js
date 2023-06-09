@@ -31,3 +31,5 @@ document.querySelector('#buy-now-btn').addEventListener('click', function(event)
   
     return isFormValid;
   }
+
+  //
