@@ -39,6 +39,10 @@ section {
   padding: 4rem 0 3rem;
 }
 
+.bx-send{
+  color: #252525;
+}
+
 /* CAROUSEL */
 .carousel {
   max-width: 600px;
