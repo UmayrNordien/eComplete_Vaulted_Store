@@ -2,101 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="eComplete Assesment">
-    <meta name="keywords" content="HTML, CSS, JavaScript, eCommerce, Netlify, Cart">
-    <meta name="author" content="Umayr Nordien">
-    <link rel="icon" href="https://i.postimg.cc/g2XtgPH0/vault-meta-icon.png" alt="disk">
-    <title>Vltd | Shop</title>
-    <!-- Link To CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--BOOTSTRAP CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
-    <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="eComplete Assesment">
+  <meta name="keywords" content="HTML, CSS, JavaScript, eCommerce, Netlify, Cart">
+  <meta name="author" content="Umayr Nordien">
+  <link rel="icon" href="https://i.postimg.cc/g2XtgPH0/vault-meta-icon.png" alt="disk">
+  <title>Vltd | Shop</title>
+  <!-- Link To CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--BOOTSTRAP CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Nav -->
-        <div class="nav container">
-            <a href="home.html" class="logo">Vaulted</a>
-            <a href="home.html" class="logo">Home</a>
-            <!-- <a href="contact.html"><i class="bx bx-send"></i></a>       -->
-            <!-- Cart-Icon -->
-            <i class='bx bxs-shopping-bags' id="cart-icon"></i>
-            <!-- Cart -->
-            <div class="cart">
-                <h2 class="cart-title">Your Cart</h2>
-                <!-- Content -->
-                <div class="cart-content">
-
-                </div>
-                <!-- Total -->
-                <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">R0</div>
-                </div>
-                <!-- Checkout Button -->
-                <button type="button" class="btn-checkout">Checkout</button>
-                <!-- Cart Close -->
-                <i class='bx bx-x' id="close-cart"></i>
-
-            </div>
-        </div>
-    </header>
-    <!-- Shop -->
-    <section class="shop container">
-        <h2 class="section-title">Shop Products</h2>
+  <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <div class="nav container">
+      <a href="home.html" class="logo">Vaulted</a>
+      <a href="home.html" class="logo">Home</a>
+      <!-- <a href="contact.html"><i class="bx bx-send"></i></a>       -->
+      <!-- Cart-Icon -->
+      <i class='bx bxs-shopping-bags' id="cart-icon"></i>
+      <!-- Cart -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
         <!-- Content -->
-        <div class="shop-content">
-            <!-- Card 1 -->
-            <div class="product-box">
-                <img src="img/product1.png" alt="Emma Clark Skull Jersey" class="product-img" loading="lazy">
-                <h2 class="product-title">Emma Clark Skull Jersey</h2>
-                <span class="price">$2000</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 2 -->
-            <div class="product-box">
-                <img src="img/product2.png" alt="Neon Genesis Jacket" class="product-img" loading="lazy">
-                <h2 class="product-title">NEON GENESIS JACKET</h2>
-                <span class="price">$4200</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 3 -->
-            <div class="product-box">
-                <img src="img/product3.png" alt="Guts Jersey" class="product-img" loading="lazy">
-                <h2 class="product-title">GUTS JERSEY</h2>
-                <span class="price">$2400</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 4 -->
-            <div class="product-box">
-                <img src="img/product4.png" alt="Steep Clif Graphic Hoodie" class="product-img" loading="lazy">
-                <h2 class="product-title">STEEP CLIF GRAPHIC HOODIE</h2>
-                <span class="price">$2000</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 5 -->
-            <div class="product-box">
-                <img src="img/product5.png" alt="TALISHKO Stitching Zebra Sherpa Winter Coat" class="product-img" loading="lazy">
-                <h2 class="product-title">Zebra Sherpa Coat</h2>
-                <span class="price">$3000</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
-            <!-- Card 6 -->
-            <div class="product-box">
-                <img src="img/product6.png" alt="Vintage Work Jacket" class="product-img" loading="lazy">
-                <h2 class="product-title">Vintage Work Jacket</h2>
-                <span class="price">$4800</span>
-                <i class='bx bxs-shopping-bags add-cart'></i>
-            </div>
+        <div class="cart-content">
+
         </div>
-    </section>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">R0</div>
+        </div>
+        <!-- Checkout Button -->
+        <button type="button" class="btn-checkout">Checkout</button>
+        <!-- Cart Close -->
+        <i class='bx bx-x' id="close-cart"></i>
+
+      </div>
+    </div>
+  </header>
+  <!-- Shop -->
+  <section class="shop container">
+    <h2 class="section-title">Shop Products</h2>
+
+    <!-- Search by letters filter -->
+    <div class="search">
+      <label for="search-input">Search:</label>
+      <input type="text" id="search-input">
+    </div>
+
+    <!-- Filter by price range filter -->
+    <div class="filter">
+      <label for="price-range">Filter by price range:</label>
+      <div class="price-range">
+        <input type="range" id="price-range" min="0" max="5000" step="100" value="5000">
+        <div class="price-inputs">
+          <input type="number" id="min-price" min="0" max="5000" step="100" value="0">
+          <span>-</span>
+          <input type="number" id="max-price" min="0" max="5000" step="100" value="5000">
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="shop-content">
+      <!-- Card 1 -->
+      <div class="product-box">
+        <img src="img/product1.png" alt="Emma Clark Skull Jersey" class="product-img" loading="lazy">
+        <h2 class="product-title">Emma Clark Skull Jersey</h2>
+        <span class="price">$2000</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 2 -->
+      <div class="product-box">
+        <img src="img/product2.png" alt="Neon Genesis Jacket" class="product-img" loading="lazy">
+        <h2 class="product-title">NEON GENESIS JACKET</h2>
+        <span class="price">$4200</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 3 -->
+      <div class="product-box">
+        <img src="img/product3.png" alt="Guts Jersey" class="product-img" loading="lazy">
+        <h2 class="product-title">GUTS JERSEY</h2>
+        <span class="price">$2400</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 4 -->
+      <div class="product-box">
+        <img src="img/product4.png" alt="Steep Clif Graphic Hoodie" class="product-img" loading="lazy">
+        <h2 class="product-title">STEEP CLIF GRAPHIC HOODIE</h2>
+        <span class="price">$2000</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 5 -->
+      <div class="product-box">
+        <img src="img/product5.png" alt="TALISHKO Stitching Zebra Sherpa Winter Coat" class="product-img"
+          loading="lazy">
+        <h2 class="product-title">Zebra Sherpa Coat</h2>
+        <span class="price">$3000</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 6 -->
+      <div class="product-box">
+        <img src="img/product6.png" alt="Vintage Work Jacket" class="product-img" loading="lazy">
+        <h2 class="product-title">Vintage Work Jacket</h2>
+        <span class="price">$4800</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="page-footer font-small blue pt-4">
@@ -124,10 +144,10 @@
               <a href="#!"><i class='bx bxl-twitter'></i></a>
             </li>
             <li>
-              <a href="#!"><i class='bx bxl-linkedin-square' ></i></a>
+              <a href="#!"><i class='bx bxl-linkedin-square'></i></a>
             </li>
             <li>
-              <a href="#!"><i class='bx bxl-tiktok' ></i></a>
+              <a href="#!"><i class='bx bxl-tiktok'></i></a>
             </li>
           </ul>
         </div>
@@ -161,12 +181,13 @@
     <!-- Copyright -->
   </footer>
 
-    <!-- Link TO JS -->
-    <script src="js/main.js"></script>
-    <script src="js/test.js"></script>
+  <!-- Link TO JS -->
+  <script src="js/main.js"></script>
+  <script src="js/test.js"></script>
+  <script src="js/filter.js"></script>
 
-    <!-- BOOTSTRAP JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
