@@ -326,11 +326,6 @@ header {
   }
 }
 
-/* FOOTER */
-footer{
-  margin-top: 20px;
-}
-
 /* unvisited link */
 a:link {
   color: var(--text-color);
