@@ -92,8 +92,9 @@ header {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px 0;
+  gap: 40px; /* the navbar was previously non responsive and causing overlaping on mobile view especially since space between was used */
 }
 
 .logo {

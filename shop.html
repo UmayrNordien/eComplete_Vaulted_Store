@@ -52,24 +52,9 @@
   <section class="shop container">
     <h2 class="section-title">Shop Products</h2>
 
-    <!-- Search by letters filter -->
-    <div class="search">
-      <label for="search-input">Search:</label>
-      <input type="text" id="search-input">
-    </div>
+    <!--FILTER-->
+    <input type="text" id="filter-search" placeholder="Search products...">
 
-    <!-- Filter by price range filter -->
-    <div class="filter">
-      <label for="price-range">Filter by price range:</label>
-      <div class="price-range">
-        <input type="range" id="price-range" min="0" max="5000" step="100" value="5000">
-        <div class="price-inputs">
-          <input type="number" id="min-price" min="0" max="5000" step="100" value="0">
-          <span>-</span>
-          <input type="number" id="max-price" min="0" max="5000" step="100" value="5000">
-        </div>
-      </div>
-    </div>
     <!-- Content -->
     <div class="shop-content">
       <!-- Card 1 -->
@@ -198,7 +183,7 @@
   <!-- Link TO JS -->
   <script src="js/main.js"></script>
   <script src="js/test.js"></script>
-  <script src="js/filter.js"></script>
+  <script src="./js/filter.js"></script>
 
   <!-- BOOTSTRAP JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
