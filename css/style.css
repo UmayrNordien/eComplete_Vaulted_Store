@@ -23,7 +23,6 @@
 /* IMAGE */
 img {
   width: 100%;
-  loading: lazy;
 }
 
 body {
@@ -40,8 +39,17 @@ section {
   padding: 4rem 0 3rem;
 }
 
-.bx-send{
+.bx-send {
   color: #252525;
+}
+
+#filter-search::placeholder {
+  text-align: center;
+}
+
+#filter-search {
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* CAROUSEL */
