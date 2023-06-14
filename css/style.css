@@ -45,6 +45,7 @@
   width: 200px;
   border: none;
   background-color: #b19cd9;
+  border: 1px solid var(--text-color);
   color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
@@ -63,6 +64,7 @@
 
 .centered-button:hover {
   background-color: #ffd1dc;
+  border: 1px solid var(--text-color);
   color: #252525;
 }
 
@@ -135,6 +137,58 @@ section {
 
 #price-range {
   width: 10rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--side-color);
+  outline: none;
+  margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--main-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--main-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--main-color);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: var(--main-color);
+}
+
+input[type="range"]::-ms-thumb:hover {
+  background: var(--main-color);
 }
 
 /* CAROUSEL */
@@ -292,7 +346,8 @@ header {
   margin: 1.5rem auto 0 auto;
   padding: 12px 20px;
   border: none;
-  background: var(--text-color);
+  background: var(--main-color);
+  border: 1px solid var(--text-color);
   color: var(--bg-color);
   font-size: 1rem;
   font-weight: 500;
@@ -301,7 +356,8 @@ header {
 }
 
 .btn-checkout:hover {
-  background: var(--main-color);
+  background: var(--side-color);
+  color: var(--text-color)
 }
 
 #close-cart {
@@ -373,6 +429,7 @@ header {
 
 .add-cart:hover {
   background: var(--side-color);
+  border: 1px solid var(--text-color);
   color: #252525;
 }
 

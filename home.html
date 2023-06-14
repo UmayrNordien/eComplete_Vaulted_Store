@@ -121,6 +121,35 @@
     </div>
     <!-- Grid container -->
 
+        <!--CONTACT-->
+        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
+        aria-controls="offcanvasLeft">Contact Us</button>
+  
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLeftLabel">Contact Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form action="https://formspree.io/f/myyvjoyz" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label sr-only" style="color:#252525">Name</label>
+              <input name="name" type="text" class="form-control" id="name" aria-label="Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label sr-only" style="color:#252525">Email address</label>
+              <input name="email" type="email" class="form-control" id="email" aria-label="Email address" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label sr-only" style="color:#252525">Message</label>
+              <textarea name="message" class="form-control" id="message" rows="3" aria-label="Message"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Send</button>
+          </form>
+        </div>
+      </div>
+
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2); color: #252525; font-size: 12px !important">
       © 2020 Copyright All Rights Reserved |
