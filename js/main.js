@@ -146,10 +146,6 @@ document.addEventListener("DOMContentLoaded", function() {
   replaceCurrencySymbol();
 });
 
-
-
-
-
 const searchInput = document.getElementById('filter-search');
 const productBoxes = document.querySelectorAll('.product-box');
 
@@ -166,3 +162,10 @@ searchInput.addEventListener('input', () => {
     }
   });
 });
+
+// const parallaxBg = document.querySelector('.parallax-bg');
+
+// window.addEventListener('scroll', function() {
+//   let offset = window.pageYOffset;
+//   parallaxBg.style.backgroundPositionY = offset * 0.7 + 'px';
+// });

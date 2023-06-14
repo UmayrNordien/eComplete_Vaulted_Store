@@ -1,4 +1,4 @@
-/* Google Fonts */
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
 
 * {
@@ -13,11 +13,65 @@
 }
 
 /* COLORS */
+/* keeping the design minimalistic and clean */
 :root {
   --main-color: #b19cd9;
   --side-color: #ffd1dc;
   --text-color: #252525;
   --bg-color: #fff;
+}
+/* LANDING PAGE */
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: url('https://i.postimg.cc/4ybrz3WP/pexels-sami-abdullah-11818322.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    min-height: 100vh;
+    padding-top: 60px; /* adjust this value to accommodate the height of your header */
+  }
+}
+
+.centered-button {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: #b19cd9;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.centered-button:hover {
+  background-color: #ffd1dc;
+  color: #252525;
+}
+
+@media (max-width: 768px) {
+  .centered-button {
+    height: 40px;
+    width: 160px;
+    font-size: 1rem;
+  }
 }
 
 /* IMAGE */
@@ -50,6 +104,37 @@ section {
 #filter-search {
   padding: 5px;
   border-radius: 10px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#filter-search {
+  margin-right: 1rem;
+}
+
+#filter-price {
+  display: flex;
+  align-items: center;
+}
+
+#filter-size {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#filter-range label {
+  margin-right: 0.5rem;
+}
+
+#price-range {
+  width: 10rem;
 }
 
 /* CAROUSEL */
@@ -93,7 +178,7 @@ header {
   left: 0;
   width: 100%;
   background: var(--bg-color);
-  box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+  box-shadow: 0 1px 4px var(--main-color);
   z-index: 100;
 }
 
@@ -125,7 +210,7 @@ header {
   min-height: 100vh;
   padding: 20px;
   background: var(--bg-color);
-  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  /* box-shadow: -2px 0 4px hsl(0 4% 15% / 10%); */
   transition: 0.3s;
 }
 
@@ -211,6 +296,7 @@ header {
   color: var(--bg-color);
   font-size: 1rem;
   font-weight: 500;
+  border-radius: 5px;;
   cursor: pointer;
 }
 
@@ -334,6 +420,7 @@ header {
   }
 }
 
+/* STYLING LINKS */
 /* unvisited link */
 a:link {
   color: var(--text-color);
