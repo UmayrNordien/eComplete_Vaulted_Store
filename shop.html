@@ -50,31 +50,46 @@
   </header>
   <!-- Shop -->
   <section class="shop container">
-    <h2 class="section-title">Shop Products</h2>
+    <h2 class="section-title mt-4">Shop Products</h2>
 
-    <!--FILTER-->
-    <div class="filter-container">
-      <select id="filter-search">
-        <option value="">Filter by type</option>
-        <option value="jersey">Jersey</option>
-        <option value="hoodie">Hoodie</option>
-        <option value="top">Top</option>
-        <option value="jacket">Jacket</option>
-        <option value="pants">Pants</option>
-      </select>
+    <!-- Offcanvas left open button -->
+    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas"
+      aria-controls="filterOffcanvas">
+      <i class="bx bx-filter"></i> Filter
+    </button>
 
-      <div class="price-filter"> <!--not working-->
-        <label for="filter-price">Filter by price:</label>
-        <input type="range" id="filter-price" min="0" max="5000" step="100" value="5000">
-        <span id="price-value"></span>
+    <!-- Filter Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="filterOffcanvas" aria-labelledby="filterOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title mx-auto" id="filterOffcanvasLabel">Filters</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
+      <div class="offcanvas-body">
+        <!-- Filter options -->
+        <div class="filter-container">
+          <select id="filter-search">
+            <option value="">Filter by type</option>
+            <option value="jersey">Jersey</option>
+            <option value="hoodie">Hoodie</option>
+            <option value="top" disabled>Top</option>
+            <option value="jacket">Jacket</option>
+            <option value="pants" disabled>Pants</option>
+          </select>
 
-      <!-- <select id="filter-size"> 
-        <option value="">Filter by size</option>
-        <option value="Small">Small</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-      </select> -->
+          <div class="price-filter">
+            <label for="filter-price">Filter by price:</label>
+            <input type="range" id="filter-price" min="0" max="5000" step="100" value="5000">
+            <span id="price-value"></span>
+          </div>
+
+          <select id="filter-size">
+            <option value="">Filter by size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
+        </div>
+      </div>
     </div>
 
     <!-- Content -->
@@ -144,6 +159,22 @@
         <span class="price">$3400</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
+      <!-- Card 9 -->
+      <div class="product-box">
+        <img src="img/product9.png" alt="Daulet Apparel Graphic Jersey" class="product-img" loading="lazy">
+        <h2 class="product-title">Daulet Apparel Graphic Jersey</h2>
+        <h6 class="product-size">Sizes available: Large</h6>
+        <span class="price">$1900</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 10 -->
+      <div class="product-box">
+        <img src="img/product10.png" alt="Daulet Apparel Graphic Jersey" class="product-img" loading="lazy">
+        <h2 class="product-title">Daulet Apparel Graphic Jersey</h2>
+        <h6 class="product-size">Sizes available: Large</h6>
+        <span class="price">$1900</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
     </div>
   </section>
 
@@ -206,8 +237,8 @@
 
     <!-- Copyright -->
     <div class="text-center p-3"
-      style="background-color: rgba(255, 255, 255, 0.2); color: #252525; font-size: 12px !important">
-      © 2020 Copyright All Rights Reserved |
+      style="background-color: #fff; color: #252525; font-size: 12px !important">
+      © 2023 Copyright All Rights Reserved |
       <a class="text-dark" href="https://umayrnordienspersonalportfolio.netlify.app/">Umayr Nordien</a>
     </div>
     <!-- Copyright -->
