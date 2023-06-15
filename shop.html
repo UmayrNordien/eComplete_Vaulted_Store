@@ -68,7 +68,7 @@
         <!-- Filter options -->
         <div class="filter-container">
           <select id="filter-search">
-            <option value="">Filter by type</option>
+            <option value="">Filter by type : ALL</option>
             <option value="jersey">Jersey</option>
             <option value="hoodie">Hoodie</option>
             <option value="top" disabled>Top</option>
@@ -83,7 +83,7 @@
           </div>
 
           <select id="filter-size">
-            <option value="">Filter by size</option>
+            <option value="">Filter by size : ALL</option>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
@@ -94,36 +94,66 @@
 
     <!-- Content -->
     <div class="shop-content">
-      <!-- Card 1 -->
-      <div class="product-box">
-        <img src="img/product1.png" alt="Emma Clark Skull Jersey" class="product-img" loading="lazy">
-        <h2 class="product-title">Emma Clark Skull Jersey</h2>
-        <h6 class="product-size">Sizes available: Small, Large</h6>
-        <span class="price">$2000</span>
-        <i class='bx bxs-shopping-bags add-cart'></i>
-      </div>
-      <!-- Card 2 -->
-      <div class="product-box">
-        <img src="img/product2.png" alt="Neon Genesis Jacket" class="product-img" loading="lazy">
-        <h2 class="product-title">NEON GENESIS JACKET</h2>
-        <h6 class="product-size">Sizes available: Medium , Large</h6>
-        <span class="price">$4200</span>
-        <i class='bx bxs-shopping-bags add-cart'></i>
-      </div>
-      <!-- Card 3 -->
-      <div class="product-box">
-        <img src="img/product3.png" alt="Guts Jersey" class="product-img" loading="lazy">
-        <h2 class="product-title">GUTS JERSEY</h2>
-        <h6 class="product-size">Sizes availible: Medium , Small</h6>
-        <span class="price">$2400</span>
-        <i class='bx bxs-shopping-bags add-cart'></i>
-      </div>
+<!-- Card 1 -->
+<div class="product-box">
+  <img src="img/product1.png" alt="Emma Clark Skull Jersey" class="product-img" loading="lazy">
+  <h2 class="product-title">Emma Clark Skull Jersey</h2>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-1" value="Small"> Small
+    </label>
+    <label>
+      <input type="radio" name="size-1" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-1" value="Large"> Large
+    </label>
+  </div>
+  <span class="price">$2000</span>
+  <i class='bx bxs-shopping-bags add-cart'></i>
+</div>
+<!-- Card 2 -->
+<div class="product-box">
+  <img src="img/product2.png" alt="Neon Genesis Jacket" class="product-img" loading="lazy">
+  <h2 class="product-title">NEON GENESIS JACKET</h2>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-2" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-2" value="Large"> Large
+    </label>
+  </div>
+  <span class="price">$4200</span>
+  <i class='bx bxs-shopping-bags add-cart'></i>
+</div>
+<!-- Card 3 -->
+<div class="product-box">
+  <img src="img/product3.png" alt="Guts Jersey" class="product-img" loading="lazy">
+  <h2 class="product-title">GUTS JERSEY</h2>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>
+  <span class="price">$2400</span>
+  <i class='bx bxs-shopping-bags add-cart'></i>
+</div>
       <!-- Card 4 -->
       <div class="product-box">
         <img src="img/product4.png" alt="Steep Clif Graphic Hoodie" class="product-img" loading="lazy">
         <h2 class="product-title">STEEP CLIF GRAPHIC HOODIE</h2>
-        <h6 class="product-size">Sizes available: Medium</h6>
-        <span class="price">$2000</span>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$2000</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
       <!-- Card 5 -->
@@ -131,48 +161,112 @@
         <img src="img/product5.png" alt="TALISHKO Stitching Zebra Sherpa Winter Coat" class="product-img"
           loading="lazy">
         <h2 class="product-title">Zebra Sherpa Coat</h2>
-        <h6 class="product-size">Sizes available: Large</h6>
-        <span class="price">$3000</span>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$3000</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
       <!-- Card 6 -->
       <div class="product-box">
         <img src="img/product6.png" alt="Vintage Work Jacket" class="product-img" loading="lazy">
         <h2 class="product-title">Vintage Work Jacket</h2>
-        <h6 class="product-size">Sizes availible: Medium</h6>
-        <span class="price">$4800</span>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$4800</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
       <!-- Card 7 -->
       <div class="product-box">
         <img src="img/product7.png" alt="Vintage Work Jacket" class="product-img" loading="lazy">
         <h2 class="product-title">Vintage Work Jacket</h2>
-        <h6 class="product-size">Sizes available: Medium</h6>
-        <span class="price">$2750</span>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$2750</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
       <!-- Card 8 -->
       <div class="product-box">
         <img src="img/product8.png" alt="TRUCKING WORK JACKET" class="product-img" loading="lazy">
         <h2 class="product-title"> GREEN TRUCKING WORK JACKET</h2>
-        <h6 class="product-size">Sizes available: Small , Medium</h6>
-        <span class="price">$3400</span>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$3400</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
       <!-- Card 9 -->
       <div class="product-box">
         <img src="img/product9.png" alt="Daulet Apparel Graphic Jersey" class="product-img" loading="lazy">
         <h2 class="product-title">Daulet Apparel Graphic Jersey</h2>
-        <h6 class="product-size">Sizes available: Large</h6>
-        <span class="price">$1900</span>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$1900</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
       <!-- Card 10 -->
       <div class="product-box">
-        <img src="img/product10.png" alt="Daulet Apparel Graphic Jersey" class="product-img" loading="lazy">
-        <h2 class="product-title">Daulet Apparel Graphic Jersey</h2>
-        <h6 class="product-size">Sizes available: Large</h6>
-        <span class="price">$1900</span>
+        <img src="img/product10.png" alt="Naka Graphic Jersey" class="product-img" loading="lazy">
+        <h2 class="product-title">Naka Graphic Jersey</h2>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$1600</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 11 -->
+      <div class="product-box">
+        <img src="img/product11.png" alt="Skeleton Graphic Hoodie" class="product-img" loading="lazy">
+        <h2 class="product-title">Skeleton Graphic Hoodie</h2>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$1900</span>
+        <i class='bx bxs-shopping-bags add-cart'></i>
+      </div>
+      <!-- Card 12 -->
+      <div class="product-box">
+        <img src="img/product12.png" alt="ANGEL HOODIE FLARED GREY BABY BLUE" class="product-img" loading="lazy">
+        <h2 class="product-title">ANGEL HOODIE FLARED GREY BABY BLUE</h2>
+  <div class="product-sizes">
+    <label>
+      <input type="radio" name="size-3" value="Medium"> Medium
+    </label>
+    <label>
+      <input type="radio" name="size-3" value="Small"> Small
+    </label>
+  </div>        <span class="price">$2200</span>
         <i class='bx bxs-shopping-bags add-cart'></i>
       </div>
     </div>

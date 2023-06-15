@@ -520,6 +520,42 @@ a:active {
   align-items: center;
   justify-content: center;
 }
+.cat1:hover {
+opacity: 69%;
+transform: scale(0.95);
+border-radius: 10px;
+transition: 1s ease-in-out;
+}
+.cat2:hover {
+opacity: 69%;
+transform: scale(0.95);
+border-radius: 10px;
+transition: 1s ease-in-out;
+}
+.cat3:hover {
+opacity: 69%;
+transform: scale(0.95);
+border-radius: 10px;
+transition: 1s ease-in-out;
+}
+.cat4:hover {
+opacity: 69%;
+transform: scale(0.95);
+border-radius: 10px;
+transition: 1s ease-in-out;
+}
+.cat5:hover {
+opacity: 69%;
+transform: scale(0.95);
+border-radius: 10px;
+transition: 1s ease-in-out;
+}
+.cat6:hover {
+opacity: 69%;
+transform: scale(0.95);
+border-radius: 10px;
+transition: 1s ease-in-out;
+}
 
 .centered-section {
   display: flex;
