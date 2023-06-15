@@ -12,6 +12,41 @@
   text-decoration: none !important;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--bg-color);
+  background: var(--main-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--main-color);
+}
+
+/* SCROLL */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #b19cd9;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #ffd1dc55 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(225deg, #ffd1dc 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(315deg, #ffd1dc55 25%, transparent 25%) 0px 0/ 32px 32px, linear-gradient(45deg, #ffd1dc 25%, #b19cd9 25%) 0px 0/ 32px 32px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b19cd9;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #ffd1dc55 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(225deg, #ffd1dc 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(315deg, #ffd1dc55 25%, transparent 25%) 0px 0/ 32px 32px, linear-gradient(45deg, #ffd1dc 25%, #b19cd9 25%) 0px 0/ 32px 32px;
+}
+
 /* COLORS */
 /* keeping the design minimalistic and clean */
 :root {
@@ -593,6 +628,11 @@ h4 {
   padding: 10px;
   border-radius: 10px;
   margin: 0;
+}
+.non-select{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 /* Responsive styles */
