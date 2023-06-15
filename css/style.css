@@ -114,6 +114,44 @@
   }
 }
 
+.title-text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.centered-button {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: #b19cd9;
+  border: 1px solid var(--text-color);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .title-text {
+    margin-bottom: 10px;
+  }
+
+  .centered-button {
+    margin-top: 10px;
+  }
+}
+
+
 /* IMAGE */
 img {
   width: 100%;
