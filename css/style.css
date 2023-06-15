@@ -30,21 +30,25 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000000; 
+  background: #e1e1e1; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #b19cd9;
-  opacity: 0.8;
-  background: linear-gradient(135deg, #ffd1dc55 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(225deg, #ffd1dc 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(315deg, #ffd1dc55 25%, transparent 25%) 0px 0/ 32px 32px, linear-gradient(45deg, #ffd1dc 25%, #b19cd9 25%) 0px 0/ 32px 32px;
+  background-color: #ffd1dc;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(150deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(30deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(150deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(60deg, #b19cd977 25%, transparent 25.5%, transparent 75%, #b19cd977 75%, #b19cd977), linear-gradient(60deg, #b19cd977 25%, transparent 25.5%, transparent 75%, #b19cd977 75%, #b19cd977);
+  background-size: 48px 84px;
+  background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #b19cd9;
-  opacity: 0.8;
-  background: linear-gradient(135deg, #ffd1dc55 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(225deg, #ffd1dc 25%, transparent 25%) -16px 0/ 32px 32px, linear-gradient(315deg, #ffd1dc55 25%, transparent 25%) 0px 0/ 32px 32px, linear-gradient(45deg, #ffd1dc 25%, #b19cd9 25%) 0px 0/ 32px 32px;
+  background-color: #ffd1dc;
+  opacity: 1;
+  background-image:  linear-gradient(30deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(150deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(30deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(150deg, #b19cd9 12%, transparent 12.5%, transparent 87%, #b19cd9 87.5%, #b19cd9), linear-gradient(60deg, #b19cd977 25%, transparent 25.5%, transparent 75%, #b19cd977 75%, #b19cd977), linear-gradient(60deg, #b19cd977 25%, transparent 25.5%, transparent 75%, #b19cd977 75%, #b19cd977);
+  background-size: 48px 84px;
+  background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;
 }
 
 /* COLORS */
@@ -662,10 +666,11 @@ transition: 1s ease-in-out;
 
 h4 {
   color: var(--main-color);
-  background-color: var(--bg-color);
+  background-color: #ffffff10;
   padding: 10px;
   border-radius: 10px;
   margin: 0;
+  box-shadow: 20px 20px 50px 10px rgb(255, 255, 255) inset;
 }
 .non-select{
   -webkit-user-select: none; /* Safari */
